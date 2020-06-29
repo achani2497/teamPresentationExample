@@ -1,0 +1,176 @@
+/* GENERAL */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Abel', sans-serif;
+}
+
+.fondo-violeta{
+    background-color: rgb(114, 0, 218);
+}
+
+.fondo-amarillo{
+    background-color: rgb(249, 192, 12);
+}
+
+.sombra-texto{
+    text-shadow: 1px 1px black;
+}
+
+.btn{
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+/* SECCION PRINCIPAL */
+.banner{
+    background-image: url(../images/banner-top2.jpg);
+    background-size: cover;
+    height: 46em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#presentacion{
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    border: none;
+    width: 30%;
+    height: 25%;
+}
+
+#titulo-presentacion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+/* DESCRIPCION DE LA EMPRESA */
+#descripcion{
+    height: 20%;
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.texto{
+    margin: 1% 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1em;
+    border-radius: 25px;
+    box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+}
+
+/* INFORMACION DE LOS MIEMBROS DEL EQUIPO */
+#presentacion-equipo{
+    border-top: 3px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#caja-presentacion{
+    box-shadow: 0px 3px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all .2s ease-in-out;
+}
+
+#caja-presentacion:hover{
+    transform: scale(1.1);
+}
+
+#avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 6em;
+    box-shadow: 0px 1px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+#titulo{
+    margin-top:4.3%;
+}
+
+/* CONTACTANOS! */
+#contacto{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+#contacto input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#contacto textarea{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.input-group .input-group-text{
+    background: transparent!important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+}
+
+/* FOOTER */
+#footer{
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-item :hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: none;
+}
+
+.nav-item a{
+    font-size: 1.4em;
+    color: white;
+    transition: background .8s, color .5s;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px black;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 300px) and (max-width:700px){
+    
+    #presentacion{
+        width: 70%;
+        margin-left: -10%;
+    }
+    
+    .nav-item a{
+        font-size: 1em;
+    }
+
+    #footer .nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #footer .nav .nav-item a:nth-last-child(){
+        width: 100%;        
+    }
+}
